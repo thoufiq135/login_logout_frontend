@@ -15,7 +15,7 @@ function App() {
 console.log(IP)
 setloading(true)
 try{
-  const response=await fetch(`http://localhost:5000/logout?IP=${IP}`)
+  const response=await fetch(`https://emp-in-out-backend.onrender.com/logout?IP=${IP}`)
   const res=await response.json()
   if(response.status!=200){
     setCount(true)
